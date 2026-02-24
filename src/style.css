@@ -3,7 +3,7 @@
 
 @layer utilities {
   .container {
-    @apply max-w-330 mx-auto px-4;
+    @apply max-w-285 mx-auto;
   }
 }
 
