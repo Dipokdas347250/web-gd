@@ -1,86 +1,30 @@
 @import "tailwindcss";
 
-
 @layer utilities {
   .container {
     @apply max-w-285 mx-auto;
   }
 }
 
-:root {
-
-  --dmt-black-2: #38435C;
-  --linear-1: #FF1E1E;
-  --linear-2: #FF8079;
-  --brand-red-2: #DF3636;
-  --brand-blue-1: #4285FA;
-  --brand-blue-2: #F1F5FF;
-  --brand-green-1: #34A853; 
-  --brand-green-2: #EFF8F2; 
-  --brand-green-lin-1: #FFFFFF; 
-  --brand-green-lin-2: #34A853; 
-  --brand-yellow-1: #F88513; 
-  --brand-yellow-2: #FDF5E6; 
-  --brand-yellow-lin-1: #F88513; 
-  --brand-yellow-lin-2: #FFFFFF; 
-  --brand-gray-1: #6F7B88; 
-  --brand-gray-2: #A9B0B8; 
-  --brand-gray-3: #E9F0F8; 
-  --brand-rating-1: #FFA600; 
-  --brand-rating-2: #FF6C10; 
-
-
-  --color-dmt-black-2: var(--dmt-black-2);
-  --color-linear-1: var(--linear-1);
-  --color-linear-2: var(--linear-2);
-  --color-brand-red-2: var(--brand-red-2);
-  --color-brand-blue-1: var(--brand-blue-1);
-  --color-brand-blue-2: var(--brand-blue-2);
-  --color-brand-green-1: var(--brand-green-1);
-  --color-brand-green-2: var(--brand-green-2);
-  --color-brand-green-lin-1: var(--brand-green-lin-1);
-  --color-brand-green-lin-2: var(--brand-green-lin-2);
-  --color-brand-yellow-1: var(--brand-yellow-1);
-  --color-brand-yellow-2: var(--brand-yellow-2);
-  --color-brand-yellow-lin-1: var(--brand-yellow-lin-1);
-  --color-brand-yellow-lin-2: var(--brand-yellow-lin-2);
-  --color-brand-gray-1: var(--brand-gray-1);
-  --color-brand-gray-1: var(--brand-gray-1);
-  --color-brand-gray-1: var(--brand-gray-1);
-  --color-brand-gray-2: var(--brand-gray-2);
-  --color-brand-gray-3: var(--brand-gray-3);
-  --color-brand-rating-1: var(--brand-rating-1);
-  --color-brand-rating-2: var(--brand-rating-2);
-
-  --font-inter: "Inter", sans-serif;
-
-}
-
-@theme inline {
-
-  --color-dmt-black-2: var(--color-dmt-black-2);
-  --color-linear-1: var(--color-linear-1);
-  --color-linear-2: var(--color-linear-2);
-  --color-brand-red-2: var(--color-brand-red-2);
-  --color-brand-blue-1: var(--color-brand-blue-1);
-  --color-brand-blue-2: var(--color-brand-blue-2);
-  --color-brand-green-1: var(--color-brand-green-1);
-  --color-brand-green-2: var(--color-brand-green-2);
-  --color-brand-green-lin-1: var(--color-brand-green-lin-1);
-  --color-brand-green-lin-2: var(--color-brand-green-lin-2);
-  --color-brand-yellow-1: var(--color-brand-yellow-1);
-  --color-brand-yellow-2: var(--color-brand-yellow-2);
-  --color-brand-yellow-lin-1: var(--color-brand-yellow-lin-1);
-  --color-brand-yellow-lin-2: var(--color-brand-yellow-lin-2);
-  --color-brand-gray-1: var(--color-brand-gray-1);
-  --color-brand-gray-1: var(--color-brand-gray-1);
-  --color-brand-gray-1: var(--color-brand-gray-1);
-  --color-brand-gray-2: var(--color-brand-gray-2);
-  --color-brand-gray-3: var(--color-brand-gray-3);
-  --color-brand-rating-1: var(--color-brand-rating-1);
-  --color-brand-rating-2: var(--color-brand-rating-2);
-}
-
 @theme {
   --font-inter: "Inter", sans-serif;
+  --color-dmt-black-2: #38435c;
+  --color-linear-1: #ff1e1e;
+  --color-linear-2: #ff8079;
+  --color-brand-red-2: #df3636;
+  --color-brand-blue-1: #4285fa;
+  --color-brand-blue-2: #ff8079;
+  --color-brand-green-1: #34a853;
+  --color-brand-green-2: #eff8f2;
+  --color-brand-green-lin-1: #ffffff;
+  --color-brand-green-lin-2: #34a853;
+  --color-brand-yellow-1: #f88513;
+  --color-brand-yellow-2: #fdf5e6;
+  --color-brand-yellow-lin-1: #f88513;
+  --color-brand-yellow-lin-2: #ffffff;
+  --color-brand-gray-1: #6f7b88;
+  --color-brand-gray-2: #a9b0b8;
+  --color-brand-gray-3: #e9f0f8;
+  --color-brand-rating-1: #ffa600;
+  --color-brand-rating-2: #ff6c10;
 }
