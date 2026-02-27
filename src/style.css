@@ -297,7 +297,7 @@ div.demo05::after{
 /* Mobile (up to 575px) */
 @media (max-width: 575px) {
    div.demo03, div.demo04 {
-    max-width: 340px;
+    max-width: 320px;
     height: 205px; 
     margin: 0 auto;
   }
