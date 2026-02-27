@@ -40,3 +40,355 @@
   transition: height 0.4s ease;
 } */
 
+
+div.demo {
+  width: 364px;
+  height: 205px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo::before{
+  content: "";
+  background-image: linear-gradient(360deg , #5B8FFF , #ffffff);
+
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+
+
+div.demo01 {
+  width: 364px;
+  height: 205px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo01::before{
+  content: "";
+  background-image: linear-gradient(360deg , #ffffff , #34A853);
+
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo01::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+
+div.demo02 {
+  width: 364px;
+  height: 205px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo02::before{
+  content: "";
+  background-image: linear-gradient(360deg , #F88513 , #ffffff);
+
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo02::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+div.demo03 {
+  width: 558px;
+  height: 165px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo03::before{
+  content: "";
+  background-image: linear-gradient(360deg , #ffffff , #DF3636);
+  width: 450%;
+  height: 450%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo03::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+
+div.demo04 {
+  width: 558px;
+  height: 165px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo04::before{
+  content: "";
+  background-image: linear-gradient(360deg , #7451FD , #ffffff);
+  width: 450%;
+  height: 450%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo04::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+div.demo05 {
+  width: 461px;
+  height: 579px;
+  
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+div.demo05::before{
+  content: "";
+  background-image: linear-gradient(180deg , #34A853 , #ffffff,#F88513 );
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  animation: rotate 3s linear infinite;
+}
+div.demo05::after{
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  div.demo03, div.demo04 {
+    max-width: 558px;
+    height: 165px;
+  }
+}
+
+/* Laptop (1200px - 1399px) */
+@media (max-width: 1399px) {
+  div.demo03, div.demo04 {
+    max-width: 520px;
+    height: 160px;
+  }
+}
+
+/* Tablet (768px - 1199px) */
+@media (max-width: 1199px) {
+  div.demo03, div.demo04 {
+    max-width: 780px;
+    height: 165px;
+    margin: 0 auto;
+  }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  div.demo03, div.demo04 {
+    max-width: 420px;
+    height: 145px;
+    
+  }
+}
+
+/* Mobile (up to 575px) */
+@media (max-width: 575px) {
+   div.demo03, div.demo04 {
+    max-width: 364px;
+    height: 205px; 
+    margin: 0 auto;
+  }
+}
+
+
+/* Large Desktop (1400px+) */
+
+
+/* Laptop (1200px - 1399px) */
+@media (max-width: 1399px) {
+  div.demo05  {
+    max-width: 520px;
+    height: 160px;
+  }
+}
+
+/* Tablet (768px - 1199px) */
+@media (max-width: 1199px) {
+  div.demo05  {
+    max-width: 780px ;
+    height: 205px;
+    margin: 0 auto;
+  }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  div.demo05  {
+    max-width: 420px;
+    height: 145px;
+    
+  }
+}
+
+/* Mobile (up to 575px) */
+@media (max-width: 575px) {
+   div.demo05  {
+    max-width: 364px;
+    height: 205px; 
+    margin: 0 auto;
+  }
+}
+
+
+
+/* Laptop (1200px - 1399px) */
+@media (max-width: 1399px) {
+  div.demo05  {
+    max-width: 520px;
+    height: 160px;
+  }
+}
+
+/* Tablet (768px - 1199px) */
+@media (max-width: 1199px) {
+  div.demo05  {
+    max-width: 780px ;
+    height: 555px;
+    margin: 0 auto;
+  }
+}
+
+/* Large Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  div.demo05  {
+    max-width: 420px;
+    height: 455px;
+    
+  }
+}
+
+/* Mobile (up to 575px) */
+@media (max-width: 575px) {
+   div.demo05  {
+    max-width: 364px;
+    height: 550px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
