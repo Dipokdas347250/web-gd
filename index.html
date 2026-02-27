@@ -1218,113 +1218,95 @@
   <!--Dipok   footer end -->
 
 <!-- Course Module and Frequently AskedQuestions accordion -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+ <script>
+window.addEventListener("load", function () {
+  // ===== Course Module Accordion =====
+  const courseModule = document.querySelector("#dipok-vai-course-module");
+  if (courseModule) {
+    courseModule.addEventListener("click", function(e){
+      const header = e.target.closest(".p-4 > div:first-child");
+      if (!header) return;
 
-      const cards = document.querySelectorAll("#dipok-vai-course-module .p-4");
+      const card = header.closest(".p-4");
+      const content = card.querySelector("p")?.parentElement;
+      const arrow = card.querySelector('img[src*="a-up"]');
 
-      cards.forEach(card => {
+      if (!content) return;
 
-        const header = card.children[0];
-        const content = card.querySelector("p")?.parentElement;
-        const arrow = card.querySelector('img[src*="a-up.svg"]'); 
+      const isOpen = content.style.height && content.style.height !== "0px";
 
-        if (!content) return;
-
-        content.style.height = "0px";
-        content.style.overflow = "hidden";
-        content.style.transition = "height 0.4s ease";
-
-        if (arrow) {
-          arrow.style.transition = "transform 0.3s ease";
-        }
-
-        header.style.cursor = "pointer";
-
-        header.addEventListener("click", function () {
-
-          const isOpen = content.style.height !== "0px";
+    
+      courseModule.querySelectorAll(".p-4").forEach(c=>{
+        const cContent = c.querySelector("p")?.parentElement;
+        const cArrow = c.querySelector('img[src*="a-up"]');
+        if(cContent) cContent.style.height = "0px";
+        if(cArrow) cArrow.style.transform = "rotate(0deg)";
+      });
 
      
-          document.querySelectorAll("#dipok-vai-course-module .p-4").forEach(c => {
-            const p = c.querySelector("p");
-            const a = c.querySelector('img[src*="a-up.svg"]');
-
-            if (p) p.parentElement.style.height = "0px";
-            if (a) a.style.transform = "rotate(0deg)";
-          });
-
-         
-          if (!isOpen) {
-            content.style.height = content.scrollHeight + "px";
-            if (arrow) arrow.style.transform = "rotate(180deg)";
-          }
-
-        });
-
-      });
-
-    });
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-  const faqSection = document.querySelector("#dipok-vai-faq");
-  const cards = faqSection.querySelectorAll(".p-6");
-
-  cards.forEach(card => {
-
-    const header = card.children[0];
-    const content = card.querySelector("p")?.parentElement;
-    const arrow = card.querySelector('img[src*="Vector"]');
-
-    if (!content || !arrow) return;
-
-
-    const originalSrc = arrow.getAttribute("src");        
-    const rotatedSrc = originalSrc.replace(" (1).svg", ".svg"); 
-
-
-    content.style.height = "0px";
-    content.style.overflow = "hidden";
-    content.style.transition = "height 0.4s ease";
-    header.style.cursor = "pointer";
-
-
-    arrow.dataset.original = originalSrc;
-    arrow.dataset.rotated = rotatedSrc;
-
-    header.addEventListener("click", function () {
-
-      const isOpen = content.style.height !== "0px";
-
-
-      faqSection.querySelectorAll(".p-6").forEach(c => {
-        const p = c.querySelector("p");
-        const a = c.querySelector('img[src*="Vector"]');
-
-        if (p) p.parentElement.style.height = "0px";
-        if (a && a.dataset.original) a.setAttribute("src", a.dataset.original);
-      });
-
-   
-      if (!isOpen) {
+      if(!isOpen){
         content.style.height = content.scrollHeight + "px";
-        arrow.setAttribute("src", arrow.dataset.rotated); 
-      } else {
-        content.style.height = "0px";
-        arrow.setAttribute("src", arrow.dataset.original); 
+        if(arrow) arrow.style.transform = "rotate(180deg)";
       }
-
     });
 
-  });
+    courseModule.querySelectorAll(".p-4").forEach(c=>{
+      const cContent = c.querySelector("p")?.parentElement;
+      if(cContent){
+        cContent.style.height = "0px";
+        cContent.style.overflow = "hidden";
+        cContent.style.transition = "height 0.4s ease";
+      }
+      const cArrow = c.querySelector('img[src*="a-up"]');
+      if(cArrow) cArrow.style.transition = "transform 0.3s ease";
+    });
+  }
+
+  // ===== FAQ Accordion =====
+  const faqSection = document.querySelector("#dipok-vai-faq");
+  if(faqSection){
+    faqSection.addEventListener("click", function(e){
+      const header = e.target.closest(".p-6 > div:first-child");
+      if(!header) return;
+
+      const card = header.closest(".p-6");
+      const content = card.querySelector("p")?.parentElement;
+      const arrow = card.querySelector('img[src*="Vector"]');
+
+      if(!content || !arrow) return;
+
+      const isOpen = content.style.height && content.style.height !== "0px";
+
+    
+      faqSection.querySelectorAll(".p-6").forEach(c=>{
+        const cContent = c.querySelector("p")?.parentElement;
+        const cArrow = c.querySelector('img[src*="Vector"]');
+        if(cContent) cContent.style.height = "0px";
+        if(cArrow) cArrow.style.transform = "rotate(0deg)";
+      });
+
+      
+      if(!isOpen){
+        content.style.height = content.scrollHeight + "px";
+        arrow.style.transform = "rotate(180deg)";
+      }
+    });
+
+ 
+    faqSection.querySelectorAll(".p-6").forEach(c=>{
+      const cContent = c.querySelector("p")?.parentElement;
+      if(cContent){
+        cContent.style.height = "0px";
+        cContent.style.overflow = "hidden";
+        cContent.style.transition = "height 0.4s ease";
+      }
+      const cArrow = c.querySelector('img[src*="Vector"]');
+      if(cArrow) cArrow.style.transition = "transform 0.3s ease";
+    });
+  }
 
 });
-
-
-  </script>
+</script>
 <!-- Course Module and Frequently AskedQuestions accordion -->
 
 
