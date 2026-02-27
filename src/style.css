@@ -29,10 +29,14 @@
   --color-brand-rating-2: #ff6c10;
 }
 
-#dipok-vai-course-module .accordion-content {
+/* #dipok-vai-course-module .accordion-content {
   height: 0;
   overflow: hidden;
   transition: height 0.4s ease;
 }
+#dipok-vai-faq .accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+} */
 
- 
