@@ -43,7 +43,7 @@
 
 div.demo {
   width: 364px;
-  height: 205px;
+  height: 220px;
   
   border-radius: 12px;
   position: relative;
@@ -60,8 +60,8 @@ div.demo::before{
   content: "";
   background-image: linear-gradient(360deg , #5B8FFF , #ffffff);
 
-  width: 200%;
-  height: 200%;
+  width: 230%;
+  height: 230%;
   position: absolute;
   animation: rotate 3s linear infinite;
 }
@@ -81,7 +81,7 @@ div.demo::after{
 
 div.demo01 {
   width: 364px;
-  height: 205px;
+  height: 220px;
   
   border-radius: 12px;
   position: relative;
@@ -98,8 +98,8 @@ div.demo01::before{
   content: "";
   background-image: linear-gradient(360deg , #ffffff , #34A853);
 
-  width: 200%;
-  height: 200%;
+  width: 230%;
+  height: 230%;
   position: absolute;
   animation: rotate 3s linear infinite;
 }
@@ -118,7 +118,7 @@ div.demo01::after{
 
 div.demo02 {
   width: 364px;
-  height: 205px;
+  height: 220px;
   
   border-radius: 12px;
   position: relative;
@@ -135,8 +135,8 @@ div.demo02::before{
   content: "";
   background-image: linear-gradient(360deg , #F88513 , #ffffff);
 
-  width: 200%;
-  height: 200%;
+  width: 230%;
+  height: 230%;
   position: absolute;
   animation: rotate 3s linear infinite;
 }
@@ -264,7 +264,7 @@ div.demo05::after{
 @media (min-width: 1400px) {
   div.demo03, div.demo04 {
     max-width: 558px;
-    height: 165px;
+    height: 200px;
   }
 }
 
