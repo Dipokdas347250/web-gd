@@ -280,7 +280,7 @@ div.demo05::after{
 @media (max-width: 1199px) {
   div.demo03, div.demo04 {
     max-width: 780px;
-    height: 165px;
+    height: 200px;
     margin: 0 auto;
   }
 }
@@ -298,7 +298,7 @@ div.demo05::after{
 @media (max-width: 575px) {
    div.demo03, div.demo04 {
     max-width: 340px;
-    height: 205px; 
+    height: 220px; 
     margin: 0 auto;
   }
 }
@@ -319,7 +319,7 @@ div.demo05::after{
 @media (max-width: 1199px) {
   div.demo, div.demo01, div.demo02 {
     max-width: 780px ;
-    height: 205px;
+    height: 223px;
     margin: 0 auto;
   }
 }
@@ -328,7 +328,7 @@ div.demo05::after{
 @media (max-width: 767px) {
   div.demo, div.demo01, div.demo02 {
     max-width: 420px;
-    height: 145px;
+    height: 200px;
     
   }
 }
@@ -337,7 +337,7 @@ div.demo05::after{
 @media (max-width: 575px) {
    div.demo, div.demo01, div.demo02 {
     max-width: 340px;
-    height: 205px; 
+    height: 220px; 
     margin: 0 auto;
   }
 }
@@ -356,7 +356,7 @@ div.demo05::after{
 @media (max-width: 1199px) {
   div.demo05  {
     max-width: 780px ;
-    height: 555px;
+    height: 600px;
     margin: 0 auto;
   }
 }
@@ -365,7 +365,7 @@ div.demo05::after{
 @media (max-width: 767px) {
   div.demo05  {
     max-width: 420px;
-    height: 455px;
+    height: 600px;
     
   }
 }
@@ -374,7 +374,7 @@ div.demo05::after{
 @media (max-width: 575px) {
    div.demo05  {
     max-width: 320px;
-    height: 550px;
+    height: 650px;
     margin: 0 auto;
   }
 }
