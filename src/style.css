@@ -223,10 +223,9 @@ div.demo04::after{
   font-size: larger;
   letter-spacing: 5px;
 }
-div.demo05 {
+/* div.demo05 {
   width: 461px;
   height: 579px;
-  
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -257,7 +256,7 @@ div.demo05::after{
   align-items: center;
   font-size: larger;
   letter-spacing: 5px;
-}
+} */
 
 
 /* Large Desktop (1400px+) */
@@ -355,7 +354,7 @@ div.demo05::after{
 /* Tablet (768px - 1199px) */
 @media (max-width: 1199px) {
   div.demo05  {
-    max-width: 780px ;
+    max-width: 1080px ;
     height: 600px;
     margin: 0 auto;
   }
